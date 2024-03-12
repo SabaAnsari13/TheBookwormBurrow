@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bookworm Borrow - Login and Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="D:\\TheBookwormBurrow\\logo.jpg" alt="The Bookworm Borrow Logo" class="logo">
+
+<div class="container">
+  <h2>Welcome to our cozy Burrow!</h2>
+  <h3>Login</h3>
+  <form id="loginForm" action="/login" method="POST">
+    <input type="text" name="username" id="loginUsername" placeholder="Username" required>
+    <input type="password" name="password" id="loginPassword" placeholder="Password" required>
+    <input type="submit" value="Login">
+  </form>
+  <div class="form-links">
+    <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+  </div>
+</div>
+
+<div class="container" style="display: none;" id="registerContainer">
+  <h2>Welcome to The Bookworm Borrow</h2>
+  <h3>Register</h3>
+  <form id="registerForm" action="/register" method="POST">
+    <input type="text" name="username" id="registerUsername" placeholder="Username" required>
+    <input type="password" name="password" id="registerPassword" placeholder="Password" required>
+    <input type="submit" value="Register">
+  </form>
+  <div class="form-links">
+    <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
